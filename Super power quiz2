@@ -1,0 +1,16 @@
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main()
+{
+ int a, b;
+ cout << "Give me the base number: " << endl;
+ cin >> a;
+ cout << "Give the exponent: " << endl;
+ cin >> b;
+ int answer = pow(a,b);
+ cout << a << " raised to the " << b << " it is equal to " << answer << endl;
+ return 0;
+}
