@@ -1,0 +1,12 @@
+#include <iostream>
+using std::cout;
+
+int main ()
+{
+
+//print out the result;
+cout <<"Hello world I am Eduardo and this is my first project on c++";
+
+//to finish the program;
+return 0;
+}
