@@ -1,0 +1,31 @@
+#include<iostream>
+
+using namespace std;
+
+int main ()
+{
+//variables;
+int x=50, a=0, n=0;
+//process;
+cout<<"This program you have the task to guess a random number between 1-100";
+
+do{
+  n=n+1;
+  cout<<"\nPick a number ";
+  cin>>a;
+  if(a<x)
+  {
+    cout<<"\nThe number " << a << "is too low";
+  }
+  if(a>x)
+  {
+    cout<<"\nThe number is too high " <<a;
+  }
+
+  } while(a!=x);
+
+  cout<<"\nYou guess the number, the number is " <<x;
+//to end the program
+return 0;
+
+}
