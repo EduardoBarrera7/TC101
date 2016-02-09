@@ -1,0 +1,24 @@
+#include <iostream>
+
+int main ()
+{
+  int num, num2, cont=0;
+  std::cout << "This program allows us to calculate the sum of numbers that will be in a certain range that you will provide us" << std::endl;
+  std::cout << "Give me first number:" << std::endl;
+  std::cin >> num;
+  std::cout << "Give me the second number:" << std::endl;
+  std::cin >> num2;
+  if (num<num2) {
+    do {
+      num = num + 1;
+      cont = cont + num;
+    } while(num != num2);
+    cont = cont + 1;
+    std::cout << "The total sum is: " << cont << std::endl;
+  }
+  else
+  {
+  std::cout << "First number has to be lower than the second number. Please try it again." << std::endl;
+  }
+  return 0;
+}
