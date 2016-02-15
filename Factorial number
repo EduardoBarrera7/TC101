@@ -1,0 +1,40 @@
+#include <iostream>
+
+ using namespace std;
+ int main()
+ {
+
+   int fac, x;
+   char resp;
+
+   cout << "Want to give it a try?. Yes(y), No(n)." << endl;
+   cin >> resp;
+
+   do {
+
+       cout << "Give me the factorial number that you want to calculate" << endl;
+       cin >> x;
+
+       fac = 1;
+       for (int i=1; i<=x; i++){
+
+           fac = fac*i;
+
+       }
+
+       cout << "The factorial of " << x << " is " << fac << endl;
+       cout << "Want to try it again? Yes (y), No (n)." << endl;
+       cin >> resp;
+   } while (resp=='y');
+
+
+   if (resp=='n'){
+
+       cout << "Havea nice day." << endl;
+   }
+
+
+
+
+   return 0;
+ }
