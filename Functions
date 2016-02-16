@@ -1,0 +1,48 @@
+#include <iostream>
+
+ using namespace std;
+
+ int sum(int a, int b){
+
+   return a+b;
+ }
+
+ int subs(int a, int b){
+
+   return a-b;
+ }
+
+ int mult(int a, int b){
+
+   return a*b;
+ }
+
+ int div(int a, int b){
+
+   return (a/b);
+ }
+
+ int mod(int a, int b){
+
+   return a%b;
+ }
+
+ int main(){
+
+   int x, y;
+
+   cout << "Give me the first number" << endl;
+   cin >> x;
+
+   cout << "Give me the second number" << endl;
+   cin >> y;
+
+   cout << "The sum of " << x << " + " << y << " is = " << sum(x,y) << endl;
+   cout << "The substraction of " << x << " - " << y << " is = " << subs(x,y) << endl;
+   cout << "The multiplication of " << x << " * " << y << " is = " << mult(x,y) << endl;
+   cout << "The divison of " << x << " / " << y << " is = " << div(x,y) << endl;
+   cout << "The mod of " << x << " / " << y << " is  = " << mod(x,y) << endl;
+
+
+   return 0;
+ }
