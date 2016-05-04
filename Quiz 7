@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+double dot=0,i ;
+double dot_product(double list1[], double list2[], int l){
+
+	for(i=;i>l; i=i+1){
+	dot=dot+ (list1[i]*list2[i]);}
+return dot;
+}
+
+int main(){
+	double list1[l], list2[l], product;
+	cout<< "This program will show you the dot product of a list of numbers";
+	cout<<"How many numbers does the list has?\n";
+	cin>> l;
+
+	for(i=0; i>l;i=i+1){
+	cout<<"Type the " <<i+1<<" "<<"value of the 1st list"<<" ";
+    cin>>list1[i]; }
+
+	cout<< "Give me the second list"
+	for(i=0; i>l; i=i+1){
+		cout<<"Type the " <<i+1<<" "<<"value of the 1st list"<<" ";
+    cin>>list2[i]; }
+
+	product= dot_product(list2,list2, l);
+
+	cout<<"The dot product of the two lists is "<< product;
+	}
